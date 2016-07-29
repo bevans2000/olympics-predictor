@@ -8,10 +8,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Sport {
 
-    @OneToMany(mappedBy = "account")
+	@JsonIgnore
+    @OneToMany(mappedBy = "sport")
     private Set<Event> events = new HashSet<>();
     
     @Id
