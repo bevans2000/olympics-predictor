@@ -1,6 +1,212 @@
-"code","name","pool"
-GBR,Great Britain,2
-USA,United States,1
+code,name,pool
 CHN,China,1
+USA,United States,1
 AUS,Australia,2
+GBR,Great Britain,2
+GER,Germany,2
 FRA,France,3
+ITA,Italy,3
+JPN,Japan,3
+KOR,South Korea,3
+RUS,Russia,3
+CUB,Cuba,4
+ESP,Spain,4
+HUN,Hungary,4
+NED,Netherlands,4
+ROU,Romania,4
+UKR,Ukraine,4
+AZE,Azerbaijan,5
+BLR,Belarus,5
+BRA,Brazil,5
+CAN,Canada,5
+CZE,Czech Republic,5
+DEN,Denmark,5
+ETH,Ethiopia,5
+GEO,Georgia,5
+GRE,Greece,5
+IRI,Iran,5
+JAM,Jamaica,5
+KAZ,Kazakhstan,5
+KEN,Kenya,5
+NOR,Norway,5
+NZL,New Zealand,5
+POL,Poland,5
+PRK,North Korea,5
+SUI,Switzerland,5
+SWE,Sweden,5
+TUR,Turkey,5
+ARG,Argentina,6
+AUT,Austria,6
+BEL,Belgium,6
+BUL,Bulgaria,6
+COL,Colombia,6
+CRO,Croatia,6
+DOM,Dominican Republic,6
+FIN,Finland,6
+GRE,Greece,6
+INA,Indonesia,6
+IND,India,6
+IRL,Ireland,6
+LAT,Latvia,6
+LTU,Lithuania,6
+MEX,Mexico,6
+MGL,Mongolia,6
+RSA,South Africa,6
+SLO,Slovenia,6
+SVK,Slovakia,6
+THA,Thailand,6
+TPE,Chinese Taipei,6
+UZB,Uzbekistan,6
+AFG,Afghanistan,7
+ALB,Albania,7
+ALG,Algeria,7
+AND,Andorra,7
+ANG,Angola,7
+ANT,Antigua and Barbuda,7
+ARM,Armenia,7
+ARU,Aruba,7
+ASA,American Samoa,7
+BAH,Bahamas,7
+BAN,Bangladesh,7
+BAR,Barbados,7
+BDI,Burundi,7
+BEN,Benin,7
+BER,Bermuda,7
+BHU,Bhutan,7
+BIH,Bosnia & Herzegovina,7
+BIZ,Belize,7
+BOL,Bolivia,7
+BOT,Botswana,7
+BRN,Bahrain,7
+BRU,Brunei Darussalam,7
+BUR,Burkina Faso,7
+CAF,Central African Rep.,7
+CAM,Cambodia,7
+CAY,Cayman Islands,7
+CGO,Congo,7
+CHA,Chad,7
+CHI,Chile,7
+CIV,Côte d'Ivoire,7
+CMR,Cameroon,7
+COD,DR Congo,7
+COK,Cook Islands,7
+COM,Comoros,7
+CPV,Cape Verde,7
+CRC,Costa Rica,7
+CYP,Cyprus,7
+DJI,Djibouti,7
+DMA,Dominica,7
+ECU,Ecuador,7
+EGY,Egypt,7
+ERI,Eritrea,7
+ESA,El Salvador,7
+EST,Estonia,7
+FIJ,Fiji,7
+FSM,Micronesia,7
+GAB,Gabon,7
+GAM,Gambia,7
+GBS,Guinea-Bissau,7
+GEQ,Equatorial Guinea,7
+GHA,Ghana,7
+GRN,Grenada,7
+GUA,Guatemala,7
+GUI,Guinea,7
+GUM,Guam,7
+GUY,Guyana,7
+HAI,Haiti,7
+HKG,Hong Kong,7
+HON,Honduras,7
+IOA,IOA,7
+IRQ,Iraq,7
+ISL,Iceland,7
+ISR,Israel,7
+ISV,"Virgin Islands, US ",7
+IVB,"Virgin Islands, GB ",7
+JOR,Jordan,7
+KGZ,Kyrgyzstan,7
+KIR,Kiribati,7
+KOR,Republic of Korea,7
+KOS,Kosovo,7
+KSA,Saudi Arabia,7
+KUW,Kuwait,7
+LAO,Lao PDR,7
+LBA,Libya,7
+LBR,Liberia,7
+LCA,Saint Lucia,7
+LES,Lesotho,7
+LIB,Lebanon,7
+LIE,Liechtenstein,7
+LUX,Luxembourg,7
+MAD,Madagascar,7
+MAR,Morocco,7
+MAS,Malaysia,7
+MAW,Malawi,7
+MDA,Moldova,7
+MDA,Republic of Moldova,7
+MDV,Maldives,7
+MHL,Marshall Islands,7
+MLI,Mali,7
+MLT,Malta,7
+MNE,Montenegro,7
+MON,Monaco,7
+MOZ,Mozambique,7
+MRI,Mauritius,7
+MTN,Mauritania,7
+MYA,Myanmar,7
+NAM,Namibia,7
+NCA,Nicaragua,7
+NEP,Nepal,7
+NGR,Nigeria,7
+NIG,Niger,7
+NRU,Nauru,7
+OMA,Oman,7
+PAK,Pakistan,7
+PAN,Panama,7
+PAR,Paraguay,7
+PER,Peru,7
+PHI,Philippines,7
+PLE,Palestine,7
+PLW,Palau,7
+PNG,Papua New Guinea,7
+POR,Portugal,7
+PRK,DPR Korea,7
+PUR,Puerto Rico,7
+QAT,Qatar,7
+ROT,Refugee Olympic Team,7
+RWA,Rwanda,7
+SAM,Samoa,7
+SEN,Senegal,7
+SEY,Seychelles,7
+SIN,Singapore,7
+SKN,Saint Kitts & Nevis,7
+SLE,Sierra Leone,7
+SMR,San Marino,7
+SOL,Solomon Islands,7
+SOM,Somalia,7
+SRB,Serbia,7
+SRI,Sri Lanka,7
+SSD,South Sudan,7
+STP,Sao Tome & Principe,7
+SUD,Sudan,7
+SUR,Suriname,7
+SWZ,Swaziland,7
+SYR,Syria,7
+TAN,Tanzania,7
+TGA,Tonga,7
+TJK,Tajikistan,7
+TKM,Turkmenistan,7
+TLS,Timor-Leste,7
+TOG,Togo,7
+TRI,Trinidad and Tobago,7
+TUN,Tunisia,7
+TUV,Tuvalu,7
+UAE,United Arab Emirates,7
+UGA,Uganda,7
+URU,Uruguay,7
+VAN,Vanuatu,7
+VEN,Venezuela,7
+VIE,Vietnam,7
+VIN,St Vinc & Grenadines,7
+YEM,Yemen,7
+ZAM,Zambia,7
+ZIM,Zimbabwe,7
