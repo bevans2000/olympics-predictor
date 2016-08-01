@@ -1,11 +1,207 @@
-sport,event
-Swimming,100M Breaststoke Male
-Swimming,800M Butterfly Male
-Boxing,Flyweight
-Sailing,Small Boat
-Sailing,Large Boat
-Football,11 a side
-Cycling,1Km Pursuit
-Cycling,Team Pursuit
-Cycling,Spring
-Cycling,Road Race
+sport,event,gender
+Archery,Individual,B
+Archery,Team,B
+Athletics,10000m,B
+Athletics,100m,B
+Athletics,100m hurdles,F
+Athletics,110m hurdles,M
+Athletics,1500m,B
+Athletics,200m,B
+Athletics,20km walk,B
+Athletics,3000m steeplechase,B
+Athletics,400m,B
+Athletics,400m hurdles,B
+Athletics,4x100m,B
+Athletics,4x400m,B
+Athletics,5000m,B
+Athletics,50km walk,M
+Athletics,800m,B
+Athletics,High Jump,B
+Athletics,Decathlon,M
+Athletics,Discus Throw,B
+Athletics,Heptatlon,F
+Athletics,Javelin Throw,B
+Athletics,Long Jump,B
+Athletics,Marathon,B
+Athletics,Hammer Throw,B
+Athletics,Pole Vault,B
+Athletics,Shot Put,B
+Athletics,Triple Jump,B
+Badminton,Doubles,B
+Badminton,Individual,B
+Badminton,Mixed,X
+Basketball,Team,B
+Beach Volley,Team,B
+BMX,BMX,B
+Boxing,Bantam,M
+Boxing,Light,B
+Boxing,Middle,B
+Boxing,Flyweight,M
+Boxing,Fly,B
+Boxing,Heavy,M
+Boxing,Light Heavy,M
+Boxing,Super Heavy,M
+Boxing,Welter,M
+Boxing,Light Welter,M
+Canoe Slalom,C1,M
+Canoe Slalom,C2,M
+Canoe Slalom,K1,B
+Canoe Sprint,C1 1000m,M
+Canoe Sprint,C1 200m,M
+Canoe Sprint,C2 1000m,M
+Canoe Sprint,K1 1000m,M
+Canoe Sprint,K1 200m,B
+Canoe Sprint,K1 500m,B
+Canoe Sprint,K2 1000m,M
+Canoe Sprint,K2 200m,M
+Canoe Sprint,K2 500m,B
+Canoe Sprint,K4 1000m,M
+Canoe Sprint,K4 500m,B
+Cycling,Time Trial,B
+Cycling,Road,B
+Cycling Track,Keirin,B
+Cycling Track,Omnium,B
+Cycling Track,Pursuit,B
+Cycling Track,Sprint,B
+Cycling Track,Team Sprint,B
+Diving,10m,B
+Diving,10m Synchro,B
+Diving,3m,B
+Diving,3m Synchro,B
+Equestrian,Dressage - Individual,X
+Equestrian,Eventing - Individual,X
+Equestrian,Jumping - Individual,X
+Equestrian,Dressage - Team,X
+Equestrian,Eventing - Team,X
+Equestrian,Jumping - Team,X
+Fencing,Epee,B
+Fencing,Foil,B
+Fencing,Sabre - Team,B
+Fencing,Epee - Team,B
+Fencing,Sabre,B
+Football,Team,B
+Freestyle Wrestling,125 kg,M
+Freestyle Wrestling,48 kg,F
+Freestyle Wrestling,53 kg,F
+Freestyle Wrestling,57 kg,M
+Freestyle Wrestling,58 kg,F
+Freestyle Wrestling,63 kg,F
+Freestyle Wrestling,65 kg,M
+Freestyle Wrestling,69 kg,F
+Freestyle Wrestling,74 kg,M
+Freestyle Wrestling,75 kg,F
+Freestyle Wrestling,86 kg,M
+Freestyle Wrestling,97 kg,M
+Golf,Individual,B
+Greco-Roman Wrestling,130 kg,M
+Greco-Roman Wrestling,59 kg,M
+Greco-Roman Wrestling,66 kg,M
+Greco-Roman Wrestling,75 kg,M
+Greco-Roman Wrestling,85 kg,M
+Greco-Roman Wrestling,98 kg,M
+Gymnastics Artistic,Rings,M
+Gymnastics Artistic,Uneven Bars,F
+Gymnastics Artistic,Horizontal Bar,M
+Gymnastics Artistic,Balance Beam,F
+Gymnastics Artistic,Team,B
+Gymnastics Artistic,Parallel Bars,M
+Gymnastics Artistic,Pommel Horse,M
+Gymnastics Artistic,Vault,B
+Gymnastics Artistic,Floor,B
+Gymnastics Artistic,All Around,B
+Gymnastics Rhythmic,Team,F
+Gymnastics Rhythmic,Individual,F
+Handball,Team,B
+Judo,100+ kg,M
+Judo,78+ kg,F
+Judo,48 kg,F
+Judo,60 kg,M
+Judo,48-52 kg,F
+Judo,52-57 kg,F
+Judo,57-63 kg,F
+Judo,60-66 kg,M
+Judo,63-70 kg,F
+Judo,66-73 kg,M
+Judo,70-78 kg,F
+Judo,73-81 kg,M
+Judo,81-90 kg,M
+Judo,90-100 kg,M
+Modern pentathlon,Individual,B
+Mountain Bike,Individual,B
+Rowing,Lightweight Double Sculls,B
+Rowing,Lightweight Fours,M
+Rowing,Pairs,B
+Rowing,Single Sculls,B
+Rowing,Double Sculls,B
+Rowing,Quadruple Sculls,B
+Rowing,Fours,M
+Rowing,Eigths,B
+Rugby,7,B
+Sailing,470,B
+Sailing,49er,M
+Sailing,49er FX,F
+Sailing,Finn,M
+Sailing,Laser,M
+Sailing,LaserRadial,F
+Sailing,Nacra17,X
+Sailing,RS:X,B
+Shooting,10m Air Pistol,B
+Shooting,10m Air Rifle,B
+Shooting,25m Pistol,F
+Shooting,25m Rapid Fire Pistol,M
+Shooting,50m Pistol,M
+Shooting,50m Rifle 3 Positions,B
+Shooting,50m Rifle Prone,M
+Shooting,Double Trap,M
+Shooting,Skeet,B
+Shooting,Trap,B
+Swimming,100m breaststroke,B
+Swimming,100m backstroke,B
+Swimming,100m freestyle,B
+Swimming,100 butterfly,B
+Swimming,10 km,B
+Swimming,1500m freestyle,B
+Swimming,200m breaststroke,B
+Swimming,200m backstroke,B
+Swimming,200m medley,B
+Swimming,200m freestyle,B
+Swimming,200m butterfly,B
+Swimming,400m medley,B
+Swimming,400m freestyle,B
+Swimming,4x100 medley,B
+Swimming,4x100 freestyle,B
+Swimming,4x200 freestyle,B
+Swimming,50m freestyle,B
+Swimming,800m freestyle,B
+Synchronized Swimming,Duet,F
+Synchronized Swimming,Team,F
+Table Tennis,Team,B
+Table Tennis,Individual,B
+Taekwondo,67+ kg,F
+Taekwondo,80+ kg,M
+Taekwondo,49 kg,F
+Taekwondo,57 kg,F
+Taekwondo,58 kg,M
+Taekwondo,67 kg,F
+Taekwondo,68 kg,M
+Taekwondo,80 kg,M
+Tennis,Doubles,B
+Tennis,Individual,B
+Tennis,Mixed,X
+Trampoline,Individual,B
+Triathlon,Individual,B
+VolleyBall,Team,B
+Waterpolo,Team,B
+Weightlifting,105+ kg,M
+Weightlifting,75+ kg,F
+Weightlifting,105 kg,M
+Weightlifting,48 kg,F
+Weightlifting,53 kg,F
+Weightlifting,56 kg,M
+Weightlifting,58 kg,F
+Weightlifting,62 kg,M
+Weightlifting,63 kg,F
+Weightlifting,69 kg,F
+Weightlifting,77 kg,M
+Weightlifting,85 kg,M
+Weightlifting,94 kg,M

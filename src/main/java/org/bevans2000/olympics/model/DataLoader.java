@@ -1,6 +1,5 @@
 package org.bevans2000.olympics.model;
 
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Date;
 import java.util.HashMap;
@@ -24,6 +23,10 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class DataLoader {
+
+	private static final String FEMALE_EVENT = " - Women";
+
+	private static final String MALE_EVENT = " - Men";
 
 	private static Log logger = LogFactory.getLog(DataLoader.class);
     
@@ -110,7 +113,24 @@ public class DataLoader {
 					sportsCache.put(sportName, parentSport);
 				}
 				
-				eventRepo.save(new Event(eventName, parentSport, ceremony));
+				char eventGender = record.get("gender").charAt(0);
+				switch (eventGender) {
+				case 'M':
+					eventRepo.save(new Event(eventName + MALE_EVENT, parentSport, ceremony));
+					break;
+				case 'F':
+					eventRepo.save(new Event(eventName + FEMALE_EVENT, parentSport, ceremony));
+					break;
+				case 'X':
+					eventRepo.save(new Event(eventName, parentSport, ceremony));
+					break;
+				case 'B':
+					eventRepo.save(new Event(eventName + FEMALE_EVENT, parentSport, ceremony));
+					eventRepo.save(new Event(eventName + MALE_EVENT, parentSport, ceremony));
+					break;					
+				default:
+					throw new IllegalArgumentException("Unknown Event type '" + eventGender + "'");
+				}
 			}
 
 			csvSource.close();
