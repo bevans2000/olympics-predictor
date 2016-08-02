@@ -11,13 +11,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Event {
-    @JsonIgnore
-    @ManyToOne
-    private Sport sport;
-    
     @Id
     @GeneratedValue
     private Long id;
+    
+	@JsonIgnore
+    @ManyToOne
+    private Sport sport;
     
     private String name;
     private Date ceremony;

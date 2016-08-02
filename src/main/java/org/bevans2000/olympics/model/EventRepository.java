@@ -6,7 +6,7 @@ import java.util.Date;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EventRepository extends JpaRepository<Event, Long>{
-	Event findByName(String name);
+	Event findBySportAndName(Sport sport, String name);
 	
 	Collection<Event> findByCeremony(Date ceremonyDate);
 
