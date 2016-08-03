@@ -19,6 +19,8 @@ public class Application {
 	}
 }
 
+
+
 @ResponseStatus(HttpStatus.NOT_FOUND)
 class UserNotFoundException extends RuntimeException {
 

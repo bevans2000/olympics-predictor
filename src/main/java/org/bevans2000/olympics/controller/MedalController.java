@@ -38,6 +38,9 @@ class MedalController {
 	
 	@Autowired
 	private PointCalculator calculator;
+	
+	@Autowired
+	private DataLoader loader;
 
 	@RequestMapping(value = "/{country}", method = RequestMethod.GET)
 	Collection<Medal> readByCountry(@PathVariable String country) {
