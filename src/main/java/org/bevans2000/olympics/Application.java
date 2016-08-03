@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration(exclude = { 
-        org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class 
+        org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class,
+        org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration.class
     })
 public class Application {
 
