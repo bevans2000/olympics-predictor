@@ -12,7 +12,6 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.bevans2000.olympics.PointCalculator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -25,9 +24,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class DataLoader {
 
-	private static final String FEMALE_EVENT = " - Women";
+	public static final String FEMALE_EVENT = " - Women";
 
-	private static final String MALE_EVENT = " - Men";
+	public static final String MALE_EVENT = " - Men";
 
 	private static Log logger = LogFactory.getLog(DataLoader.class);
     
@@ -43,12 +42,6 @@ public class DataLoader {
 	@Autowired
 	private PoolRepository poolRepo;
 	
-	@Autowired
-	private MedalRepository medalRepo;
-	
-	@Autowired
-	private PointCalculator calculator;
-	
 	@PostConstruct
 	public void loadData() {
 
@@ -57,40 +50,12 @@ public class DataLoader {
 			loadCountries();
 			
 			loadEvents();
-			
-			loadMedals();
 		}
 		else {
 			logger.info("Data already present");
 		}
 	}
 
-	private void loadMedals() {
-		createMedal("Football", "Team" + MALE_EVENT, "GBR", "FRA", "CHN");		
-	}
-
-	private void createMedal(String sportName, String eventName, String gold, String silver, String bronze) {
-		Sport sport = sportRepo.findByName(sportName);
-		if (sport == null) {
-			throw new IllegalArgumentException("Can not find Sport called " + sportName);
-		}
-		
-		Event event = eventRepo.findBySportAndName(sport, eventName);
-		if (event == null) {
-			throw new IllegalArgumentException("Can not find Event called " + eventName + " in " + sportName);
-		}
-		
-		Country goldWinner = countryRepo.findByCode(gold);
-		medalRepo.save(new Medal(event, MedalColour.GOLD, goldWinner));
-		
-		Country silverWinner = countryRepo.findByCode(silver);
-		medalRepo.save(new Medal(event, MedalColour.GOLD, silverWinner));
-
-		Country bronzeWinner = countryRepo.findByCode(bronze);
-		medalRepo.save(new Medal(event, MedalColour.GOLD, bronzeWinner));
-		
-		calculator.addEvent(event);
-	}
 
 	private void loadCountries() {
 		InputStreamReader csvSource = new InputStreamReader(getClass().getResourceAsStream("/countries.csv"));

@@ -12,7 +12,7 @@ public class PointCalculator {
 	BlockingQueue<Event> events = new LinkedBlockingQueue<>();
 	
 	/**
-	 * Add the event to the calcultor to be processed
+	 * Add the event to the calculator to be processed
 	 * @param event
 	 */
 	public void addEvent(Event event) {

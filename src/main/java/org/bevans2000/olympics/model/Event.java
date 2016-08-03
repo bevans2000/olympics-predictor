@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-public class Event {
+public class Event implements Comparable<Event>{
     @Id
     @GeneratedValue
     private Long id;
@@ -46,5 +46,11 @@ public class Event {
 	
 	public Date getCeremony() {
 		return ceremony;
+	}
+
+	@Override
+	public int compareTo(Event o) {
+		// TODO Auto-generated method stub
+		return name.compareTo(o.name);
 	}
 }
