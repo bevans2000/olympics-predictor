@@ -1,14 +1,13 @@
 package org.bevans2000.olympics.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import java.util.HashSet;
-import java.util.Set;
+import javax.persistence.UniqueConstraint;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
@@ -20,6 +19,23 @@ public class Country {
     @Id
     @GeneratedValue
     private Long id;
+
+    public String name;
+    
+    public int points;
+    
+    @Column(unique=true, nullable=false)
+    public String code;
+
+    public Country(Pool pool, String name, String code) {
+    	this.pool= pool;
+    	this.name = name;
+        this.code = code;
+        this.points = 0;
+    }
+
+    Country() { // jpa only
+    }
     
     public Long getId() {
         return id;
@@ -32,17 +48,16 @@ public class Country {
     public String getCode() {
         return code;
     }
-
-    @JsonIgnore
-    public String name;
-    public String code;
-
-    public Country(Pool pool, String name, String code) {
-    	this.pool= pool;
-    	this.name = name;
-        this.code = code;
+    
+    public Pool getPool() {
+    	return pool;
     }
 
-    Country() { // jpa only
+    public int getPoints() {
+    	return points;
     }
+    
+	public void addPoints(int pointIncrease) {
+		int points = pointIncrease;
+	}
 }

@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import org.hibernate.persister.entity.BasicEntityPropertyMapping;
+
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -24,12 +26,25 @@ public class Medal implements Comparable<Medal>{
 	@JsonIgnore
 	@ManyToOne
 	private Country winner;
+	
+	private int pointsValue;
 
 	public Medal(Event event, MedalColour colour, Country winner) {
 		super();
 		this.event = event;
 		this.colour = colour;
 		this.winner = winner;
+		
+		int modifier = winner.getPool().getModifier();
+		int basePoints = 5;
+		if (colour == MedalColour.SILVER) {
+			basePoints = 3;
+		}
+		else if (colour == MedalColour.BRONZE) {
+			basePoints = 1;
+		}
+		
+		this.pointsValue = basePoints * modifier;
 	}
 	
 	public Medal() {
@@ -57,6 +72,11 @@ public class Medal implements Comparable<Medal>{
 	@JsonGetter
 	public Long getEventId() {
 		return event.getId();
+	}
+	
+	@JsonGetter
+	public int getPointsValue() {
+		return pointsValue;
 	}
 	
 	public MedalColour getColour() {

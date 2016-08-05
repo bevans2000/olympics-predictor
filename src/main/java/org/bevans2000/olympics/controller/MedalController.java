@@ -57,11 +57,17 @@ class MedalController {
 	 */
 	@PostConstruct
 	public void loadMedals() {
-		createMedals("Football", "Team" + DataLoader.MALE_EVENT, "GBR", "FRA", "CHN");		
+		//createMedals("Football", "Team" + DataLoader.MALE_EVENT, "GBR", "FRA", "CHN");	
+		createMedals(10L, "GBR", "FRA", "CHN");	
+		createMedals(20L, "GER", "USA", "CHN");	
+		createMedals(30L, "GER", "HUN", "JPN");	
+		createMedals(40L, "CHN", "USA", "CAM");	
+		createMedals(50L, "SUI", "PRK", "CHN");	
+
 	}
 
 	/**
-	 * Create medal for an event.
+	 * Create medals via the explicit sport and event name.
 	 * @param sportName
 	 * @param eventName
 	 * @param gold
@@ -79,6 +85,36 @@ class MedalController {
 			throw new IllegalArgumentException("Can not find Event called " + eventName + " in " + sportName);
 		}
 		
+		createMedals(event, gold, silver, bronze);
+	}
+	
+	
+	/**
+	 * Create medals for an event defined by identifier
+	 * @param eventId
+	 * @param gold
+	 * @param silver
+	 * @param bronze
+	 */
+	private void createMedals(Long eventId, String gold, String silver, String bronze) {
+	
+		Event event = eventRepo.findOne(eventId);
+		if (event == null) {
+			throw new IllegalArgumentException("Can not find Event for id " + eventId);
+		}
+		
+		createMedals(event, gold, silver, bronze);
+	}
+
+	/**
+	 * Create medal for an event.
+	 * @param event
+	 * @param gold
+	 * @param silver
+	 * @param bronze
+	 */
+	private void createMedals(Event event, String gold, String silver, String bronze) {
+
 		Country goldWinner = countryRepo.findByCode(gold);
 		medalRepo.save(new Medal(event, MedalColour.GOLD, goldWinner));
 		

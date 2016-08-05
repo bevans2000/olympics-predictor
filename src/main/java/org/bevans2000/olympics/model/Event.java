@@ -1,11 +1,14 @@
 package org.bevans2000.olympics.model;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -18,6 +21,10 @@ public class Event implements Comparable<Event>{
 	@JsonIgnore
     @ManyToOne
     private Sport sport;
+	
+	@JsonIgnore
+    @OneToMany(mappedBy = "event")
+    private Set<Medal> medals = new HashSet<>();
     
     private String name;
     private Date ceremony;
@@ -48,9 +55,12 @@ public class Event implements Comparable<Event>{
 		return ceremony;
 	}
 
+	public Set<Medal> getMedals() {
+		return medals;
+	}
+	
 	@Override
 	public int compareTo(Event o) {
-		// TODO Auto-generated method stub
 		return name.compareTo(o.name);
 	}
 }
